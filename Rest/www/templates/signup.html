@@ -1,0 +1,30 @@
+<ion-view view-title="Sign-Up" name="register-view">
+   <ion-content class="padding">
+     
+        <form ng-submit="doSignUp()" ng-controller="CreateCtrl">
+        <ion-list>
+          <label class="item item-input">
+            <span class="input-label">Username</span>
+            <input type="text" ng-model="RegData.username" required>
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="text" ng-model="RegData.email" required>
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Confirm Email</span>
+            <input type="text" ng-model="RegData.email2" required>
+          </label>
+           <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" ng-model="RegData.password" required>
+          </label>
+         
+      </ion-list>
+         
+            <button class="button button-block button-positive" type="submit">SignUp</button>
+           
+      </form>
+            
+  </ion-content>
+</ion-view>
